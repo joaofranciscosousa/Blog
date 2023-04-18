@@ -33,7 +33,7 @@ const ArticlesList: React.FC = () => {
                     </div>
                 </div>
                 <hr />
-                <h1>Todas as categorias</h1>
+                <h1>Todas os Artigos</h1>
                 <hr />
                 {articles.map(({ id, title, slug }) => (
                     <div className="card mb-4" key={id}>

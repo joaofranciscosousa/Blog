@@ -1,4 +1,4 @@
-import { Router } from "express";
+import express from "express";
 import {
     CategoryController,
     ArticleController,
@@ -6,7 +6,7 @@ import {
 } from "../controllers";
 import AuthJwt from "../middlewares/AuthJwt";
 
-const routes = Router();
+const routes = express.Router();
 
 routes.get("/categories", CategoryController.index);
 routes.get("/categories/:id", CategoryController.show); // get by Id

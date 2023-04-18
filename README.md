@@ -1,17 +1,7 @@
-# Instalação do BackEnd:
+# Instalação do Projeto:
 
-- Acesse a pasta do projeto backend utilizando o comando `cd backend`
-- Execute `npm i` para instalar todas as dependências
-- Crie o arquivo `.env` a partir do arquivos `.env.sample`
-- Edite as variáveis de ambiente do arquivo `.env` criado no passo anterior com os respectivos dados do seu banco de dados
-- Execute `npm start` para iniciar o projeto backEnd
-
-# Instalação do FrontEnd:
-
-- Acesse a pasta do projeto frontend utilizando o comando `cd frontend`
-- Execute `npm i` para instalar todas as dependências
-- Crie o arquivo `.env` a partir do arquivos `.env.sample`
-- Edite as variáveis de ambiente do arquivo `.env` criado no passo anterior com a respectiva URL da API do backend, por padrão está no localhost:5000
-- Execute `npm start` para iniciar o projeto backEnd
-
-- Projeto pronto para ser testado
+- Crie o arquivo `.env` a partir do arquivos `.env.sample` - variáveis já estão setadas para uso local
+- Execute o comando `./install.sh` para instalar todas as dependencias dos microserviços
+- Execute o comando `docker compose up -d api` para subir o container da api
+- Acesse o Shell do container da api e execute o comando `npm run typeorm migration:run` para executar as migrations
+- Execute o comando `docker compose up -d` para subir todos os containers e iniciar o projeto
